@@ -1,7 +1,7 @@
 aws:
   region: "us-east-2"
   s3_bucket: "mutual-fund-tracker-demo"
-  bedrock_model_id: "meta.llama3-2-11b-instruct-v1"
+  bedrock_model_id: "your_bedrock_model_id" #Please use the model ID for model selected in the Bedrock 
 
 file_paths:
   input_data: "../datasets/input_data.csv"
