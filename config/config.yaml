@@ -1,0 +1,8 @@
+aws:
+  region: "us-east-2"
+  s3_bucket: "mutual-fund-tracker-demo"
+  bedrock_model_id: "meta.llama3-2-11b-instruct-v1"
+
+file_paths:
+  input_data: "../datasets/input_data.csv"
+  output_results: "../datasets/output_results.csv"

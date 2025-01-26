@@ -1,0 +1,12 @@
+ botocore 
+ json 
+ boto3 
+ logging 
+ os 
+ sys 
+ yaml 
+ pandas 
+ reportlab 
+ markdown
+ pytest
+ unittest

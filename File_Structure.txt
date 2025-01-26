@@ -1,0 +1,47 @@
+mutual_fund_tracker/
+│
+├── src/  
+│   ├── data_processing/  
+│   │   ├── __init__.py  
+│   │   ├── load_data.py                # Load and preprocess mutual fund data  
+│   │   ├── transform_data.py           # Transform and clean datasets  
+│   │   ├── date_range_filter.py        # Filter data by user-selected date range  
+│   │   ├── group_by_fund.py            # Aggregate data by fund and month  
+│   │   └── export_results.py           # Export processed data to CSV or JSON  
+│   │
+│   ├── services/  
+│   │   ├── __init__.py  
+│   │   ├── aws_s3_service.py           # Handle S3 bucket interactions (upload/download files)  
+│   │   ├── aws_bedrock_service.py      # Interface with AWS Bedrock playground for the demo  
+│   │   └── logger.py                   # Logging setup for debugging and monitoring  
+│   │
+│   ├── cli/  
+│   │   ├── __init__.py  
+│   │   ├── user_interface.py           # Command-line interface for user inputs (e.g., fund selection, date range)  
+│   │   └── cli_helpers.py              # Helper functions for parsing and validating inputs  
+│   │  
+│
+├── config/  
+│   ├── config.yaml                     # Configuration file for AWS, file paths, etc.  
+│   ├── aws_credentials.json            # AWS access credentials (add to `.gitignore`)  
+│   └── logging_config.json             # Logging configuration file  
+│
+├── tests/                              # Unit and integration tests  
+│   ├── test_data_processing.py         # Test cases for data processing modules  
+│   ├── test_aws_s3_service.py          # Test cases for AWS S3 interaction  
+│   ├── test_cli.py                     # Test cases for CLI interface  
+│   ├── test_logger.py                  # Test cases for logger functionality  
+│   └── test_main.py                    # Test cases for end-to-end program execution  
+│
+├── datasets/                           # Sample mutual fund datasets (input/output)  
+│   ├── input_data.csv                  # Input dataset for mutual fund data (sample)  
+│   └── output_results.csv              # Output of processed data (generated)  
+│
+├── logs/ (auto-generated)              # Stores application logs for debugging and monitoring  
+│   └── app.log  
+│
+├── .gitignore                          # Ignore unnecessary files (e.g., logs, credentials, virtual environments)  
+├── requirements.txt                    # Python dependencies (pandas, boto3, etc.)  
+├── README.md
+├── main.py                             # Entry point of the program                           # Project overview and setup instructions  
+└── setup.py                            # Installation script for the project  
