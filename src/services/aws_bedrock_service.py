@@ -26,7 +26,7 @@ def interact_with_bedrock(input_text):
         )
         
         # Use the full ARN for the model (example ARN, replace with actual ARN)
-        model_arn = "arn:aws:bedrock:us-east-2:183631345329:inference-profile/us.amazon.nova-lite-v1:0" # Please replace with your model_arn I am using amazon nova lite 
+        model_arn = "your_model_arn" # Please replace with your model_arn I am using amazon nova lite 
         
         # Prepare the payload with 'user' role and content as an array of JSON objects
         payload = {
