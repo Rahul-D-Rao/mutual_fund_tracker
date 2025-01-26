@@ -34,11 +34,11 @@ mutual_fund_tracker/
 │   └── test_main.py                    # Test cases for end-to-end program execution  
 │
 ├── datasets/                           # Sample mutual fund datasets (input/output)  
-│   ├── input_data.csv                  # Input dataset for mutual fund data (sample)  
-│   └── output_results.csv              # Output of processed data (generated)  
-│
-├── logs/ (auto-generated)              # Stores application logs for debugging and monitoring  
-│   └── app.log  
+│   ├── input_data.csv                  # Input dataset for mutual fund data (sample)
+│   ├── output_summary.html             # Output Response of the Bedrock saved in HTML format
+│   ├── output_summary.md               # Output Response of the Bedrock saved in Markdown format
+│   ├── output_summary.pdf              # Output Response of the Bedrock saved in PDF format
+│   └── output_results.csv              # Output of processed data (generated)   
 │
 ├── .gitignore                          # Ignore unnecessary files (e.g., logs, credentials, virtual environments)  
 ├── requirements.txt                    # Python dependencies (pandas, boto3, etc.)  
