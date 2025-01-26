@@ -69,7 +69,7 @@ def main():
     # Step 7: Interact with AWS Bedrock
     print("Interacting with AWS Bedrock...")
     bedrock_response = interact_with_bedrock(input_text)
-    print("Bedrock Response:", bedrock_response)
+    print("Bedrock Response:\n", bedrock_response)
 
 if __name__ == "__main__":
     main()
