@@ -123,8 +123,8 @@ Before you begin, ensure you have the following installed:
      output_results: "../datasets/output_results.csv"
    
    aws:
-     s3_bucket: "mutual-fund-tracker-demo"
-     bedrock_model_id: "arn:aws:bedrock:us-east-2:183631345329:inference-profile/us.amazon.nova-lite-v1:0"
+     s3_bucket: "your_s3_bucket_name"
+     bedrock_model_id: "your_model_id"
    ```
 
 2. **`aws_credentials.json`**:
@@ -198,4 +198,4 @@ If you encounter any errors, here are some common solutions:
    - Ensure that the input provided to the AWS Bedrock API is correctly formatted as per the model requirements. The content should be a **JSON object**.
 
 3. **File Not Found:**
-   - Check if the input data file (`mutual_fund_data.csv`) exists at the specified location and the path is correct in `config.yaml`.
+   - Check if the input data file (`input_data.csv`) exists at the specified location and the path is correct in `config.yaml`.
