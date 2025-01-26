@@ -15,8 +15,8 @@ def upload_to_s3(file_path, bucket_name, s3_key):
     try:
         s3_client = boto3.client(
             's3',
-            aws_access_key_id="AKIASVQKH62Y7WWHIKW2",
-            aws_secret_access_key="Li3IQBdoY8E0JVnIhl4rfYqLbkGnatNlZPKZJtP1",
+            aws_access_key_id="your_aws_access_key_id",
+            aws_secret_access_key="your_aws_secret_access_key",
             region_name="us-east-2"  # Replace with your region
         )
         s3_client.upload_file(file_path, bucket_name, s3_key)
